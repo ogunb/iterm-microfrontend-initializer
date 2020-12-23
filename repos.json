@@ -1,12 +1,25 @@
 {
-  "threejs": {
-    "local": "./threejs",
-    "remote": "git@github.com:ogunb/threejs-exercises.git",
-    "scripts": { "serve": "serve" }
+  "account": {
+    "local": "./account",
+    "remote": "git@git",
+    "scripts": {
+      "serve": "serve"
+    }
   },
-  "excel": {
-    "local": "./excel",
-    "remote": "git@github.com:ogunb/off-thread-excel-read.git",
-    "scripts": { "serve": "serve" }
+  "header": {
+    "local": "./header",
+    "remote": "git@git",
+    "scripts": {
+      "serve": "serve"
+    },
+    "nodeVersion": "8"
+  },
+  "root": {
+    "local": "./root",
+    "remote": "git@git",
+    "scripts": {
+      "serve": "start:dev"
+    },
+    "nodeVersion": "13"
   }
 }
