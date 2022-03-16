@@ -8,11 +8,7 @@ source ./installDependencies.sh;
 source ./defaultApps.sh;
 
 DOMAIN_NAMES=$(jq -r 'keys[]' repos.json)
-selected_domains=("$*")
-
-if test -z "$selected_domains";
-    then selected_domains=$(get_default_apps)
-fi
+selected_domains="$(get_default_apps) ${*}"
 
 for domain_name in $selected_domains
 do

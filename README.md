@@ -1,20 +1,11 @@
-# Micro-frontend Initializer
+# Micro-frontend Root Initializer
 
-This project requires following:
+- **In an iTerm window**:
+  - Run `bash start.sh {app names you'd like to run}` to run all default apps. (i.e.: `bash start.sh meal grocery`)
+  - This script will run `account`, `root`, and `header` apps by default. (refer: [defaultApps.sh](./defaultApps.sh))
+  - This script will check for any missing dependencies and will try to install them. (refer: [installDependencies.sh](./installDependencies.sh))
 
-iterm2: https://iterm2.com/
-
-nvm: https://github.com/nvm-sh/nvm
-
-jq: https://stedolan.github.io/jq
-
-ttab: https://github.com/mklement0/ttab
-
-
-- In an iterm window:
-- Edit `defaultApps.sh` file with the JSON keys of the apps you like to run. (refer: `repos.json`)
-- Run `bash start.sh` to run all default apps.
-
-You can also run only the apps you'd like by using bash arguments.
-
-ie: `bash start.sh root meal`
+> Required dependencies:
+> nvm: https://github.com/nvm-sh/nvm
+> jq: https://stedolan.github.io/jq
+> ttab: https://github.com/mklement0/ttab
